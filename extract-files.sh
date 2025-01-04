@@ -47,7 +47,7 @@ if ${EXTRACT_KERNEL}; then
     ${SRC_ROOT}/system/tools/mkbootimg/unpack_bootimg.py \
         --boot_img "${DUMP}/boot.img" \
         --out "${TMP_DIR}/boot.out" > /dev/null
-    cp -f "${TMP_DIR}/boot.out/kernel" ${MY_DIR}/Image
+    cp -f "${TMP_DIR}/boot.out/kernel" ${MY_DIR}/kernel
     echo "  - kernel"
 fi
 
